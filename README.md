@@ -50,3 +50,28 @@ Build a decentralized staking application where users can stake ETH to reach a f
 - `receive()` fallback function implementation
 
 ---
+
+### ✅ Challenge 3: Token Vendor
+
+**Status:** Completed ✓
+
+Build a token vendor that allows users to buy and sell ERC-20 tokens with ETH. Learn about token economics, automated market mechanics, and contract ownership patterns.
+
+- **Live Demo:** [https://challenge-token-vendor-798c8gy3u-olirahetaxs-projects.vercel.app](https://challenge-token-vendor-798c8gy3u-olirahetaxs-projects.vercel.app)
+- **Vendor Contract (Sepolia):** [0x9792AfBB6bc83c257aebC7Cd3A23D0E6a1eB5581](https://sepolia.etherscan.io/address/0x9792AfBB6bc83c257aebC7Cd3A23D0E6a1eB5581)
+- **YourToken Contract (Sepolia):** [0x6Bb96057CaC470cF38059dF911385CF47072bA37](https://sepolia.etherscan.io/address/0x6Bb96057CaC470cF38059dF911385CF47072bA37)
+- **Folder:** [`/challenge-token-vendor`](./challenge-token-vendor)
+
+**Key Learnings:**
+
+- ERC-20 token implementation and interactions
+- Token buying/selling mechanisms with fixed pricing
+- `transfer()` vs `transferFrom()` for token transfers
+- Owner privileges with OpenZeppelin's `Ownable`
+- Reentrancy protection with `ReentrancyGuard`
+- ETH transfer best practices using `call()` instead of `transfer()`
+- Event emission for buy/sell tracking
+- Token allowance and approval patterns
+- Contract liquidity management
+
+---
