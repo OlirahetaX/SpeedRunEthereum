@@ -89,7 +89,7 @@ Build a token vendor that allows users to buy and sell ERC-20 tokens with ETH. L
 
 Exploit the weakness of using block hash for randomness in smart contracts. Build a "rigged" contract that predicts the outcome of dice rolls and only plays when guaranteed to win. Learn about blockchain randomness, security vulnerabilities, and contract-to-contract calls.
 
-- **Live Demo:** [https://challenge-dice-game-cf6njbg5x-olirahetaxs-projects.vercel.app](https://challenge-dice-game-cf6njbg5x-olirahetaxs-projects.vercel.app)
+- **Live Demo:** [https://challenge-dice-game-nine.vercel.app](https://challenge-dice-game-nine.vercel.app)
 - **DiceGame Contract (Sepolia):** [0x1040B29616B5f7012895D63afabb79f418057c23](https://sepolia.etherscan.io/address/0x1040B29616B5f7012895D63afabb79f418057c23)
 - **RiggedRoll Contract (Sepolia):** [0x679447e42dF751AA67F57695D3F272dBbBb41B01](https://sepolia.etherscan.io/address/0x679447e42dF751AA67F57695D3F272dBbBb41B01)
 - **Folder:** [`/challenge-dice-game`](./challenge-dice-game)
