@@ -6,6 +6,13 @@
 
 This repository contains my solutions and implementations for the [SpeedRunEthereum](https://speedrunethereum.com) challenges. Each challenge is a hands-on project designed to teach core Ethereum development concepts, from basic smart contracts to advanced DeFi protocols.
 
+## 📑 Table of Contents
+
+1. [✅ Challenge 1: Tokenization](#-challenge-1-tokenization) - ERC-721 NFTs & IPFS
+2. [✅ Challenge 2: Decentralized Staking](#-challenge-2-decentralized-staking) - Staking & Time-based Logic
+3. [✅ Challenge 3: Token Vendor](#-challenge-3-token-vendor) - ERC-20 Token Economics
+4. [✅ Challenge 4: Dice Game](#-challenge-4-dice-game) - Randomness Vulnerabilities & Exploits
+
 ## 🎯 Completed Challenges
 
 ### ✅ Challenge 1: Tokenization
@@ -73,5 +80,31 @@ Build a token vendor that allows users to buy and sell ERC-20 tokens with ETH. L
 - Event emission for buy/sell tracking
 - Token allowance and approval patterns
 - Contract liquidity management
+
+---
+
+### ✅ Challenge 4: Dice Game
+
+**Status:** Completed ✓
+
+Exploit the weakness of using block hash for randomness in smart contracts. Build a "rigged" contract that predicts the outcome of dice rolls and only plays when guaranteed to win. Learn about blockchain randomness, security vulnerabilities, and contract-to-contract calls.
+
+- **Live Demo:** [https://challenge-dice-game-cf6njbg5x-olirahetaxs-projects.vercel.app](https://challenge-dice-game-cf6njbg5x-olirahetaxs-projects.vercel.app)
+- **DiceGame Contract (Sepolia):** [0x1040B29616B5f7012895D63afabb79f418057c23](https://sepolia.etherscan.io/address/0x1040B29616B5f7012895D63afabb79f418057c23)
+- **RiggedRoll Contract (Sepolia):** [0x679447e42dF751AA67F57695D3F272dBbBb41B01](https://sepolia.etherscan.io/address/0x679447e42dF751AA67F57695D3F272dBbBb41B01)
+- **Folder:** [`/challenge-dice-game`](./challenge-dice-game)
+
+**Key Learnings:**
+
+- Understanding blockchain randomness vulnerabilities
+- Block hash (`blockhash()`) limitations and predictability
+- Exploiting deterministic randomness in smart contracts
+- Contract-to-contract function calls with value transfer
+- Using `revert()` vs `return` for transaction control
+- Implementing attack/exploit contracts for security testing
+- `console.log()` debugging in Hardhat for development
+- Owner-only functions with OpenZeppelin's `Ownable`
+- Why stronger randomness solutions (VRF, oracles) are needed
+- Security implications of public blockchain data
 
 ---
